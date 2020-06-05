@@ -39,6 +39,17 @@ In order to complete your mission for today, you will need to write tests to hel
 
 1. Take a good amount of time to use the form. Find out what behaviors you expect, and any you don't expect. (Don't fix unexpected behaviors yet. We want our test to show us what's wrong in the UI, then fix the behavior - we'll walk you through that down below)
 1. Write down on a piece of paper what you want to test. (This is a very important step - always plan before coding!)
+
+- should be able to type name in name input.
+- leaving name blank should give an error.
+-Should be able to type last name
+-should give error if last name is blank
+- should be able to enter email
+- no email, or invalid email should give an error
+- should be able to type a message
+-should not display an error for empty message
+
+
 1. Add your first test. This one should be a very simple test to make sure the testing setup is working.
 1. Write a sufficient amount of tests to give you confidence in the project's code
 
