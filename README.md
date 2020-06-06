@@ -40,6 +40,7 @@ In order to complete your mission for today, you will need to write tests to hel
 1. Take a good amount of time to use the form. Find out what behaviors you expect, and any you don't expect. (Don't fix unexpected behaviors yet. We want our test to show us what's wrong in the UI, then fix the behavior - we'll walk you through that down below)
 1. Write down on a piece of paper what you want to test. (This is a very important step - always plan before coding!)
 
+- app renders without errors
 - should be able to type name in name input.
 - leaving name blank should give an error.
 -Should be able to type last name
