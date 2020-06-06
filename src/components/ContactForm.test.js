@@ -12,11 +12,19 @@ test('contact form renders', ()=>{
 
     fireEvent.change(firstNameInput, { target: { value: '' }});
 
-    const nameError = screen.getByText(/looks like there was an error:/i)
-    expect (nameError).toBeInTheDocument();
+    const nameError = screen.findByText(/Looks like there was an error:/i)
+  
+    fireEvent.change(firstNameInput, { target: { value: 'Nicole' }});
 
-    // fireEvent.change(lastNameInput, { target: { value: 'Osborn' }});
-    // fireEvent.change(emailInput, { target: { value: 'email@email.com' }});
+    fireEvent.change(lastNameInput, { target: { value: '' }});
+    const lastNameError = screen.findByText(/Looks like there was an error:/i);
+
+    fireEvent.change(lastNameInput, { target: { value: 'Osborn' }});
+
+    fireEvent.change(emailInput, { target: { value: '' }});
+    const emailError = screen.findByText(/Looks like there was an error:/i);
+
+    
     // fireEvent.change(messageInput, { target: { value: '' }});
 
     
